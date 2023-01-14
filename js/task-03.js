@@ -22,3 +22,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryListRef = document.querySelector(".gallery");
+
+const markup = images
+  .map((image) => `<li class="list-item"><img class="image" src=${image.url}, alt=${image.alt} width = "200" height = "130"></li>`)
+  .join("");
+
+  galleryListRef.insertAdjacentHTML("beforeend", markup);
+
+
+// ingredientsListRef.append(...createItemsMarkup(ingredients))
