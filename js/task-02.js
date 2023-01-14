@@ -24,4 +24,4 @@ function createItemsMarkup(ingredients){
 }
 const ingredientsListRef = document.getElementById("ingredients");
 ingredientsListRef.append(...createItemsMarkup(ingredients))
-console.log(createItemsMarkup(ingredients))
+// console.log(createItemsMarkup(ingredients))
