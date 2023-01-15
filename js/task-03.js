@@ -26,10 +26,12 @@ const images = [
 const galleryListRef = document.querySelector(".gallery");
 
 const markup = images
-  .map((image) => `<li class="list-item"><img class="image" src=${image.url}, alt=${image.alt} width = "200" height = "130"></li>`)
+  .map((image) => `<li class="list-item"><img class="image" src=${image.url}, alt=${image.alt} width = "400"></li>`)
   .join("");
 
   galleryListRef.insertAdjacentHTML("beforeend", markup);
 
+  galleryListRef.style.display = "flex";
+  galleryListRef.style.listStyle = "none";
+  galleryListRef.style.flexDirection = "column";
 
-// ingredientsListRef.append(...createItemsMarkup(ingredients))
