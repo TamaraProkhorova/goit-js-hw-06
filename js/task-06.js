@@ -14,11 +14,11 @@ console.log(lengthSymbols)
 textInput.addEventListener("blur", handleBlure);
 
 function handleBlure(event) {
-    if (event.currentTarget.value.length === lengthSymbols) {
+    if (event.target.value.length === lengthSymbols) {
         textInput.classList.add('valide');
         textInput.classList.remove('invalide');
     }else {
         textInput.classList.replace('invalide', 'valide');
 }
-console.log(event.currentTarget.value.length === lengthSymbols)
+console.log(event.target.value.length === lengthSymbols)
 }
