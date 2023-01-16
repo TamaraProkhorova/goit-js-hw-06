@@ -20,7 +20,7 @@ const valueColor = document.querySelector("span.color")
 createChangeColorButton.addEventListener("click", onChangeColorButtonClick);
 function onChangeColorButtonClick () {
   const changingColor = getRandomHexColor();
-  console.log(changingColor);
+  // console.log(changingColor);
   bodyColor.style.backgroundColor = changingColor;
   valueColor.textContent = changingColor;
 }
