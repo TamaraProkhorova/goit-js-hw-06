@@ -8,17 +8,18 @@
 const textInput = document.querySelector('#validation-input');
 const lengthSymbols = Number(textInput.dataset.length);
 
-console.log(textInput)
-console.log(lengthSymbols)
+// console.log(textInput)
+// console.log(lengthSymbols)
 
 textInput.addEventListener("blur", handleBlure);
 
+textInput.classList.add('invalid');
+ textInput.classList.add('valid');
 function handleBlure(event) {
     if (event.target.value.length === lengthSymbols) {
-        textInput.classList.add('valide');
-        textInput.classList.remove('invalide');
+        textInput.classList.replace('invalid','valid');
     }else {
-        textInput.classList.replace('invalide', 'valide');
+        textInput.classList.replace('valid','invalid');
 }
 console.log(event.target.value.length === lengthSymbols)
 }
