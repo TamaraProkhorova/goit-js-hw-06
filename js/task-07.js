@@ -7,7 +7,7 @@ const spanText = document.getElementById("text");
 console.log(valueInput);
 console.log(spanText);
 
-valueInput.addEventListener("change", onInputFontSize);
+valueInput.addEventListener("input", onInputFontSize);
 
 function onInputFontSize() {
     spanText.style.fontSize = `${valueInput.value}px`
